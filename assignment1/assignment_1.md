@@ -235,6 +235,6 @@ test_that("Testing my function", {
 })
 ```
 
-    ## Test passed 🎉
+    ## Test passed 😸
 
 **The test was passed!**

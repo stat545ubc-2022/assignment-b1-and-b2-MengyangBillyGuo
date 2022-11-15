@@ -1,0 +1,49 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# scaling function
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of scale_by_median is to scales all the numeric variables in the dataset by each variable's median number in each category. It achieves three goals: 1) check if the input is a dataset 2) scales all the numeric variables in the dataset by each variable's median number in each category, 3) delete missing values.
+
+## Installation
+
+You can install the development version of scale_by_median from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("stat545ubc-2022/assignment-b1-and-b2-MengyangBillyGuo")
+```
+
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+## Load the package
+library(scaling)
+
+## I use mtcars as example.
+
+## The following code shows the distance and horse power numbers fully scaled by median number for each cylinder category. 
+scale_by_median(mtcars,mtcars$cyl)[3:4]
+
+## Zeros means they are the median numbers.
+
+```
+
+
